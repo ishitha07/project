@@ -1,0 +1,424 @@
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #34495e;
+}
+
+.header1 {
+  background-color: #00093c;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 50px;
+}
+
+.ul-1 {
+  display: flex;
+}
+
+.divider {
+  width: 2px;
+  height: 35px;
+  background-color: #ffffff;
+  margin: 0 5px;
+}
+
+.header2 {
+  padding-top: 30px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0);
+}
+
+.header2 p {
+  padding-left: 80px;
+  color: rgb(255, 255, 255);
+}
+
+.header2 img {
+  width: 100%;
+  height: 400px;
+  z-index: -1;
+  position: absolute;
+}
+
+.header2 nav ul {
+  margin-right: 80px;
+  background-color: #007bff;
+  height: 50px;
+}
+
+.header2 nav ul li a {
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-size: 23px;
+  z-index: 1;
+  margin-left: 8px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+nav li {
+  display: inline-block;
+  color: black;
+}
+
+nav li a {
+  color: black;
+}
+
+.dropdown ul li a {
+  color: #000000;
+}
+
+.dropdown li {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.search-form {
+  width: 40%;
+  height: 60px;
+  background: #ffffff;
+  border-radius: 0.5rem 10rem;
+  margin-inline: auto;
+}
+
+.search-form input {
+  height: 100%;
+  width: calc(100% - 40px);
+  background: none;
+  font-size: 20px;
+  padding: 1rem 1rem;
+  padding-bottom: 1px;
+  border: none;
+  outline: none;
+  color: #000;
+}
+
+.container {
+  background: rgb(140, 98, 98);
+  max-width: 800px;
+  min-height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.5rem 1.5rem;
+  margin: 70px auto 30px;
+}
+
+/*form*/
+.billing {
+  flex-basis: 50%;
+}
+
+.right {
+  flex-basis: 50%;
+}
+
+form {
+  padding: 1rem;
+}
+
+h3 {
+  margin-top: 1rem;
+  color: #000000;
+}
+
+form input[type="text"],
+form input[type="number"] {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  margin: 0.5rem 0;
+  outline: none;
+}
+
+#zip {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+#zip select {
+  padding: 0.5rem 0.7rem;
+}
+
+#zip input[type="number"] {
+  padding: 0.5rem 0.7rem;
+  margin-left: 5px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 0.7rem 1.5rem;
+  background: #9b9fa2;
+  color: rgb(14, 13, 13);
+  border: none;
+  outline: none;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #757779;
+}
+
+.right form i {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 25px;
+  color: #000;
+  background: #ffffff;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 770px) {
+  .container {
+    flex-direction: column;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .container {
+    flex-direction: column;
+  }
+  body {
+    overflow-x: hidden;
+  }
+
+  #zip {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  #zip select {
+    margin-top: 10px;
+  }
+
+  #zip input[type="number"] {
+    margin-top: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+
+.footer{
+  width: 100%;
+  height: 340px;
+  bottom: 0;
+  background: linear-gradient(to right,#00093c,#2d0b00);
+  color: #fff;
+  padding: 2px 0 30px;
+  border-top-left-radius:  125px;
+  font-size: 13px;
+  line-height: 20px;
+  }
+  .row{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 90px;
+  }
+  .col {
+    flex-basis: 20%;
+    padding: 10px;
+  }
+  .logo1{
+    width: 90px;
+    margin-top: 20px;
+    background-color: #fff;
+  
+  }
+  .com h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .email-id{
+    width:fit-content ;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  ul li{
+    list-style: none;
+    margin-bottom: 12px;
+  }
+  ul li:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+  }
+  ul li a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .f1{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid#ccc;
+    margin-bottom: 50px;
+  }
+  .f1.far{
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  .f1 input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+  }
+.f1 button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .f1 button.fas{
+    font-size: 16px;
+    color:#ccc ;
+  }
+  .social-icons .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color:#000 ;
+    background: #ffffff;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  hr{
+   width: 90%;
+   border: 0;
+   border-bottom: 1px solid #ccc;
+   margin: 20px auto; 
+  
+  }
+  .copyright{
+    text-align: center;
+    
+  }
+  .underline{
+    width: 15%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    top: 25px;
+    left: 0;
+  }
+  .office{
+    width: 1px;
+    height: 260px;
+    margin: 0 10px;
+    flex-direction: column;
+  }
+  .fas {
+   color: #ffffff;
+  }
+  .social-icons :hover{
+    color: #ffffff;
+    background-color: #000;
+    transform: scale(1.5);
+  }
+  .payment-methodes {
+   font-size: 30px;
+  padding-top: 40px;
+  
+  
+  }
+  .payment-methodes :hover{
+    color: #ffffff;
+    background-color: #000;
+    transform: scale(1.5);
+  }
+
+
+
+
+
